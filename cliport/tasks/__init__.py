@@ -40,6 +40,12 @@ from cliport.tasks.towers_of_hanoi import TowersOfHanoi
 from cliport.tasks.towers_of_hanoi_seq import TowersOfHanoiSeqSeenColors
 from cliport.tasks.towers_of_hanoi_seq import TowersOfHanoiSeqUnseenColors
 from cliport.tasks.towers_of_hanoi_seq import TowersOfHanoiSeqFull
+from cliport.tasks.put_blocks_on_bottom_side_of_table import PutBlockonBottomSide
+from cliport.tasks.put_blocks_on_top_side_of_table import PutBlockonTopSide
+from cliport.tasks.put_blocks_in_pink_bowl import PutBlockInPinkBowl
+from cliport.tasks.put_blocks_on_top_right_corner import PutBlockOnTopRightCorner
+from cliport.tasks.put_blocks_on_closest_corner import PutBlockOnClosestCorner
+from cliport.tasks.put_blocks_on_different_corners import PutBlockOnDifferentCorner
 
 names = {
     # demo conditioned
@@ -84,4 +90,12 @@ names = {
     'towers-of-hanoi-seq-seen-colors': TowersOfHanoiSeqSeenColors,
     'towers-of-hanoi-seq-unseen-colors': TowersOfHanoiSeqUnseenColors,
     'towers-of-hanoi-seq-full': TowersOfHanoiSeqFull,
+    
+    # new task
+    'put-blocks-on-bottom-side-of-table': PutBlockonBottomSide,
+    'put-blocks-on-top-side-of-table': PutBlockonTopSide,
+    'put-blocks-in-pink-bowl': PutBlockInPinkBowl,
+    'put-blocks-on-top-right-corner': PutBlockOnTopRightCorner,
+    'put-blocks-on-closest-corner': PutBlockOnClosestCorner,
+    'put-blocks-on-different-corners': PutBlockOnDifferentCorner
 }
