@@ -447,6 +447,31 @@ class RavensMultiTaskDataset(RavensDataset):
                 'towers-of-hanoi-seq-unseen-colors',
             ],
         },
+        
+        'multi-language-conditioned-new': {
+            'train': [
+                'put-blocks-on-bottom-side-of-table',
+                'put-blocks-on-top-right-corner',
+                'put-blocks-on-bottom-left-corner',
+            ],
+            'val': [
+                'put-blocks-on-bottom-side-of-table',
+                'put-blocks-on-top-side-of-table',
+                'put-blocks-on-top-right-corner',
+                'put-blocks-on-bottom-left-corner',
+                'put-blocks-on-top-left-corner',
+                'put-blocks-on-bottom-right-corner',
+                
+            ],
+            'test': [
+                'put-blocks-on-bottom-side-of-table',
+                'put-blocks-on-top-side-of-table',
+                'put-blocks-on-top-right-corner',
+                'put-blocks-on-bottom-left-corner',
+                'put-blocks-on-top-left-corner',
+                'put-blocks-on-bottom-right-corner',
+            ],
+        },
 
 
         ##### multi-attr tasks

@@ -44,8 +44,13 @@ from cliport.tasks.put_blocks_on_bottom_side_of_table import PutBlockonBottomSid
 from cliport.tasks.put_blocks_on_top_side_of_table import PutBlockonTopSide
 from cliport.tasks.put_blocks_in_pink_bowl import PutBlockInPinkBowl
 from cliport.tasks.put_blocks_on_top_right_corner import PutBlockOnTopRightCorner
+from cliport.tasks.put_blocks_on_bottom_left_corner import PutBlockOnBottomLeftCorner
+from cliport.tasks.put_blocks_on_top_left_corner import PutBlockOnTopLeftCorner
+from cliport.tasks.put_blocks_on_bottom_right_corner import PutBlockOnBottomRightCorner
 from cliport.tasks.put_blocks_on_closest_corner import PutBlockOnClosestCorner
 from cliport.tasks.put_blocks_on_different_corners import PutBlockOnDifferentCorner
+from cliport.tasks.put_block_in_matching_bowl import PutBlockInMatchingBowl
+from cliport.tasks.put_block_in_different_bowl import PutBlockInDifferentBowl
 
 names = {
     # demo conditioned
@@ -96,6 +101,11 @@ names = {
     'put-blocks-on-top-side-of-table': PutBlockonTopSide,
     'put-blocks-in-pink-bowl': PutBlockInPinkBowl,
     'put-blocks-on-top-right-corner': PutBlockOnTopRightCorner,
+    'put-blocks-on-bottom-left-corner': PutBlockOnBottomLeftCorner,
+    'put-blocks-on-top-left-corner': PutBlockOnTopLeftCorner,
+    'put-blocks-on-bottom-right-corner': PutBlockOnBottomRightCorner,
     'put-blocks-on-closest-corner': PutBlockOnClosestCorner,
-    'put-blocks-on-different-corners': PutBlockOnDifferentCorner
+    'put-blocks-on-different-corners': PutBlockOnDifferentCorner,
+    'put-blocks-in-matching-bowls': PutBlockInMatchingBowl,
+    'put-blocks-in-different-bowls': PutBlockInDifferentBowl
 }
