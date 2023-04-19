@@ -18,9 +18,9 @@ class PutBlockonTopSide(Task):
         super().reset(env)
         
         # Add zone
-        zone_size = (0.06, 1, 0)
+        zone_size = (0.08, 1, 0)
         rotation = utils.eulerXYZ_to_quatXYZW((0, 0, 0))
-        zone_pose = ((0.75-0.02, 0, 0), rotation)
+        zone_pose = ((0.75-0.04, 0, 0), rotation)
 #         container_template = 'container/container-template.urdf'
 #         half = np.float32(zone_size) / 2
 #         replace = {'DIM': zone_size, 'HALF': half}

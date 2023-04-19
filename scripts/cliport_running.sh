@@ -11,11 +11,18 @@ echo "Generating dataset... Folder: $DATA_DIR"
 ## Language-Conditioned Tasks
 
 # TASKS='put-blocks-on-bottom-side-of-table put-blocks-on-closest-corner put-blocks-on-different-corners'
-TASKS='put-blocks-on-bottom-left-corner put-blocks-on-top-right-corner put-blocks-on-bottom-side-of-table'
-
-for task in $TASKS
+SEEN_TASKS='put-blocks-on-bottom-left-corner put-blocks-on-top-right-corner put-blocks-on-bottom-side-of-table'
+for task in $SEEN_TASKS
     do
-        python cliport/demos.py n=1000 task=$task mode=train data_dir=$DATA_DIR disp=$DISP &
+        python cliport/demos.py n=100 task=$task mode=train data_dir=$DATA_DIR disp=$DISP &
+        python cliport/demos.py n=100  task=$task mode=val   data_dir=$DATA_DIR disp=$DISP &
+        python cliport/demos.py n=100  task=$task mode=test  data_dir=$DATA_DIR disp=$DISP &
+    done
+echo "Finished Tasks."
+
+UNSEEN_TASKS='put-blocks-on-bottom-right-corner put-blocks-on-top-left-corner put-blocks-on-top-side-of-table'
+for task in $UNSEEN_TASKS
+    do
         python cliport/demos.py n=100  task=$task mode=val   data_dir=$DATA_DIR disp=$DISP &
         python cliport/demos.py n=100  task=$task mode=test  data_dir=$DATA_DIR disp=$DISP &
     done
